@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "name": "LineListingRecordImporter",
+  "description": "Importing patient record register in excel sheets",
+  "icons": {
+    "16": "/img/icons/chart-36.png",
+    "48": "/img/icons/chart-48.png",
+    "128": "/img/icons/chart-192.png"
+  },
+  "developer": {
+    "email": "shubham.9407x@gmail.com",
+    "name": "Shubham Bhadani",
+
+  },
+  "activities": {
+    "dhis": {
+      "href": "http://localhost:8080"
+    }
+  },
+  "launchUrl": null,
+  "launch_path": "index.html#/",
+  "installs_allowed_from": null,
+  "default_locale": "en"
+}
