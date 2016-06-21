@@ -53,3 +53,47 @@ S(function() {
     dataElements().done(load);
 })
 };
+
+
+/**
+         * Loading list of programs
+         */
+        programService.getPrograms().then(function (programs) {
+            ctrl.programs = programs;
+        }).catch(function () {
+            console.log("error in loading programs");
+        });
+    });
+    /**
+    
+    
+       * User Service
+     **/
+    app.factory('userService', function ($http, $q) {
+        return {
+            getCurrentUserId: function () {
+                var defer = $q.defer();
+                $http.get('../../api/me.json?fields=id').then(function (response) {
+                    defer.resolve(response.data.id);
+                }, function (response) {
+                    defer.reject(response);
+                });
+                return defer;
+            }
+        }
+    });
+    /**
+     * Toast Service
+     **/
+    app.factory('toastService', function ($mdToast) {
+        return {
+            showToast: function (msg) {
+                $mdToast.show(
+                        $mdToast.simple()
+                                .textContent(msg)
+                                .position('bottom right')
+                                .hideDelay(3000)
+                );
+            }
+        }
+    });
