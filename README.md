@@ -1,4 +1,4 @@
-# linelistingrecordimporter
+# linelisting record importer
 
 DHIS2 is a free and open source health information system software package based on Java frameworks. Traditional method being used by public health Systems which have been recording aggregate data of the services provided across various health programmes. This is crucial in monitoring reach and availability of public health services, but it lacks the ability of tracing the persons being provided with these services and quality of these ones. It is important that treatment information of each person is maintained as an individual case which can provide a comprehensive data management solution based on data warehousing principles.
 
